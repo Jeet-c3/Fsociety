@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Tony Stark</title>
+
+<style>
+    :root{
+      --glass: rgba(255,255,255,0.10);
+      --glass-strong: rgba(255,255,255,0.18);
+      --accent: #00ffd1;
+      --accent-2: #33d1ff;
+      --muted: rgba(255,255,255,0.75);
+      --bg-overlay: rgba(0,0,0,0.45);
+      --radius: 16px;
+      --glass-blur: 10px;
+    }
+
+    *{padding:0;margin:0;box-sizing:border-box;font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif}
+    html,body{height:100%}
+    body{
+      min-height:100vh;
+      color: #e9f6f5;
+      background: linear-gradient(135deg,#05031a 0%, #0b1522 60%);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{max-width:1100px;margin:40px auto;padding:28px}
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-radius:12px;background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));backdrop-filter: blur(6px);box-shadow: 0 6px 30px rgba(2,8,20,0.6);
+    }
+
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#021; font-weight:700}
+    .brand h2{font-size:18px;letter-spacing:0.6px}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}
+    nav a:hover{color:var(--accent)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:28px}
+
+    .card{background:var(--glass);border:1px solid rgba(255,255,255,0.06);padding:28px;border-radius:var(--radius);backdrop-filter: blur(var(--glass-blur));box-shadow: 0 8px 30px rgba(1,8,12,0.6)}
+
+    .about-title{font-size:34px;margin-bottom:12px;color:#fff}
+    .lead{color:var(--muted);line-height:1.6;margin-bottom:18px}
+
+    .badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+    .badge{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.04);font-size:14px}
+
+    .cols{display:flex;flex-direction:column;gap:12px}
+    .cols ul{list-style:none;padding-left:8px}
+    .cols li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+
+    .profile-card{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .avatar{width:320px;height:220px;border-radius:12px;background-image:url('images/bg1.jpeg');background-size:cover;background-position:center;border:1px solid rgba(255,255,255,0.06)}
+
+    .contact{display:flex;gap:12px;margin-top:8px}
+    .contact a{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;border:1px solid rgba(255,255,255,0.03)}
+    .contact a:hover{color:#031}
+
+    .projects{margin-top:18px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);margin-bottom:10px}
+    .project h4{margin-bottom:6px}
+
+    footer{margin-top:28px;text-align:center;color:rgba(255,255,255,0.6);font-size:13px}
+
+    .gh{position:relative;overflow:hidden;border-radius:8px;padding:10px}
+    .gh::before{content:"";position:absolute;inset:0;padding:3px;border-radius:8px;background:linear-gradient(90deg,red,orange,yellow,green,cyan,blue,purple,red);background-size:300%;opacity:0;transition:opacity .35s linear;z-index:-1}
+    .gh::after{content:"";position:absolute;inset:3px;border-radius:6px;background:linear-gradient(180deg,rgba(0,0,0,0.6),rgba(0,0,0,0.4));z-index:-2}
+    .gh:hover::before{opacity:1;animation:move 3s linear infinite}
+    @keyframes move{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .avatar{width:100%;height:200px}
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">JS</div>
+        <div>
+          <h2>Jeet Deepak   Sarkar</h2>
+          <div style="font-size:12px;color:var(--muted)">Cybersecurity • AI • Offensive & Defensive</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="help.html">Help</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="card">
+        <div class="about-title">About Me</div>
+        <p class="lead">I will like work in cybersecurity and offensive/defensive research, building practical tools, training, and AI-driven security systems. I like to blend high-tech automation with real-world defensive strategy. Below is a compact overview of who I am and what I build.</p>
+
+        <div class="badges">
+          <div class="badge">Ethical Hacker</div>
+          <div class="badge">Kali Linux</div>
+          <div class="badge">AI & Complete Assistants</div>
+          <div class="badge">PyTorch / CUDA</div>
+        </div>
+
+        <h3 style="margin-top:8px;color:#fff">Quick facts</h3>
+        <div class="cols">
+          <ul>
+            <li><strong>Preferred name:</strong> Tony Stark</li>
+            <li><strong>Projects:</strong> AI assistant (Meva / Miwa), Kali Linux tooling & bootable USB guides, penetration testing tools, automated security defenders.</li>
+            <li><strong>Tools:</strong> Linux/Kali, PyTorch with CUDA.</li>
+            <li><strong>Skills:</strong> Python, C, DSA, CSO concepts, Ethical Hacking, Web development.</li>
+            <li><strong>Style:</strong> Prefers inline/internal CSS and modern glass UI; likes fast anime-style voices (Bark).</li>
+          </ul>
+        </div>
+
+        <div class="projects">
+          <h3 style="color:#fff">Highlighted projects</h3>
+
+          <div class="project">
+            <h4>Chiko / Miwa — Full Assistants</h4>
+            <p>Custom voice assistant inspired by Jarvis, integrates Bark for anime-style voices, Gemini API for LLM tasks, continuous listening and command parsing, and system automation (Wi‑Fi, Bluetooth, screenshots, etc.).</p>
+          </div>
+
+          <div class="project">
+            <h4>Cybersecurity Company Concept</h4>
+            <p>Designing an AI-run penetration testing and defense company (named like Iron Man suits) that performs scalable, automated red-team and blue-team operations.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <aside class="card profile-card">
+        <div class="avatar" title="Background preview"></div>
+
+        <div style="text-align:center">
+          <h3 style="margin-bottom:6px">Contact & Links</h3>
+          <div style="color:var(--muted);font-size:14px">Connect with me</div>
+        </div>
+
+        <div class="contact">
+          <!-- Replace HREF values with real links -->
+          <a class="gh" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">
+            <!-- simple GitHub svg could be replaced by an image file -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6))"><path fill="#fff" d="M12 .5C5.7.5.6 5.6.6 11.9c0 5 3.3 9.2 7.9 10.7.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8.1-.8.1-.8 1.3.1 2 1.3 2 1.3 1.2 2 3.2 1.4 4 .9.1-.7.5-1.4.9-1.7-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.3 1.3-3.1-.1-.3-.6-1.7.1-3.6 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0C18 3 19 3.3 19 3.3c.7 1.9.2 3.3.1 3.6.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.4 5.9.5.4.9 1.2.9 2.5v3.6c0 .3.2.7.8.6 4.6-1.5 7.9-5.7 7.9-10.7C23.4 5.6 18.3.5 12 .5z"></path></svg>
+            <span style="font-size:14px;color:var(--muted)">GitHub</span>
+          </a>
+
+          <a href="mailto:youremail@example.com" style="padding:10px 12px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));color:var(--muted);text-decoration:none;border:1px solid rgba(255,255,255,0.03)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path fill="#fff" d="M12 12.713 1.5 5.25V19a2 2 0 0 0 2 2h17a2 2 0 0 0 2-2V5.25L12 12.713zM12 11l10.5-6.75H1.5L12 11z"></path></svg>
+            <span style="font-size:14px;color:var(--muted)">Email</span>
+          </a>
+        </div>
+
+        <div style="width:100%;margin-top:8px;text-align:left">
+          <h4 style="margin-bottom:8px">Inspiration & influences</h4>
+          <ul style="color:var(--muted);list-style:none;padding-left:6px">
+            <li>• Kevin Mitnick — legendary hacker & security consultant</li>
+            <li>• Linus Torvalds — creator of Linux; inspires your systems, kernel, and open-source mindset</li>
+            <li>• Modern red-team operators, exploit developers, and threat hunters</li>
+            <li>• AI-driven cybersecurity researchers building autonomous defense systems</li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </main>
+
+    <footer>
+      <div>Built with Nothing</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

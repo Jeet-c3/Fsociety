@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cybersecurity Guide — Main</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;font-family:'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif}
+    html,body{height:100%;background:linear-gradient(130deg,#0f1724,#071021 40%,#041022);color:#eaf6f5}
+    a{color:inherit}
+
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(90deg,#00ffd1,#33d1ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:#021}
+    nav a{margin-left:14px;text-decoration:none;padding:8px 12px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02)}
+    nav a:hover{background:rgba(255,255,255,0.08);color:#000}
+
+    .hero{margin-top:18px;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.03)}
+    .hero h1{font-size:32px;color:#fff;margin-bottom:8px}
+    .hero p{color:rgba(255,255,255,0.85);line-height:1.6}
+
+    section{margin-top:18px}
+    .card{background:rgba(255,255,255,0.04);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);backdrop-filter:blur(6px)}
+    h2{font-size:22px;color:#dff}
+    h3{font-size:18px;margin-top:8px;color:#dff}
+    p,ul{color:rgba(255,255,255,0.85);line-height:1.6}
+    ul{margin-left:18px}
+    li{margin:8px 0}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+    .box{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+    .callout{margin-top:12px;padding:12px;border-left:4px solid #00ffd1;background:rgba(0,255,209,0.03);color:rgba(255,255,255,0.95)}
+
+    footer{margin-top:22px;text-align:center;color:rgba(255,255,255,0.6);font-size:13px}
+
+    @media (max-width:720px){.hero h1{font-size:26px}.logo{width:44px;height:44px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">JS</div>
+        <div>
+          <div style="font-weight:700">Jeet Deepak Sarkar</div>
+          <div style="font-size:12px;color:rgba(255,255,255,0.7)">Cybersecurity Guide</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="help.html">Help</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero card">
+        <h1>Complete Cybersecurity Guide — Start to Pro</h1>
+        <p>This page is a full, practical roadmap for anyone who wants to learn cybersecurity from the ground up and turn it into a career. It includes definitions, major domains, career paths, step-by-step learning roadmaps, certifications, tools, sample projects, portfolio advice, and next steps.</p>
+      </div>
+
+      <section class="card">
+        <h2>1. What is Cybersecurity?</h2>
+        <p>Cybersecurity is the practice of protecting systems, networks, programs, and data from digital attacks. It spans protecting confidentiality, integrity, and availability (the CIA triad). Security includes preventive controls, detection, response, and recovery.</p>
+
+        <h3>Why it matters</h3>
+        <ul>
+          <li>Critical infrastructure, businesses, and personal privacy depend on secure systems.</li>
+          <li>Attackers exploit software bugs, misconfigurations, social engineering, weak credentials, and supply-chain weaknesses.</li>
+          <li>Security is a fast-growing field with high demand and many career options.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>2. Major Domains in Cybersecurity</h2>
+        <ul>
+          <li><strong>Network Security:</strong> Firewalls, IDS/IPS, VPNs, network segmentation, packet analysis.</li>
+          <li><strong>Application Security:</strong> Secure coding, code review, web-app testing (OWASP Top 10).</li>
+          <li><strong>Cloud Security:</strong> AWS/Azure/GCP hardening, identity & access management, secure cloud architectures.</li>
+          <li><strong>Endpoint Security:</strong> EDR, MDM, host hardening.</li>
+          <li><strong>Offensive Security / Penetration Testing:</strong> Ethical hacking, vulnerability assessment, exploit development.</li>
+          <li><strong>Defensive Security / Blue Team:</strong> SIEM, SOC operations, threat hunting, incident response.</li>
+          <li><strong>Malware Analysis & Reverse Engineering:</strong> Static/dynamic analysis, sandboxing, assembly basics.</li>
+          <li><strong>Forensics:</strong> Disk, memory forensics, chain-of-custody, evidence collection.</li>
+          <li><strong>IoT / Embedded / ICS Security:</strong> Hardware vulnerabilities, industrial protocols.</li>
+          <li><strong>GRC & Compliance:</strong> Policies, audits, risk management (GDPR, ISO, NIST).</li>
+          <li><strong>DevSecOps:</strong> Shift-left security, CI/CD scanning, IaC scanning.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3. Career Paths & Roles</h2>
+        <ul>
+          <li><strong>Security Analyst / SOC Analyst:</strong> Monitor alerts, triage incidents, escalate findings.</li>
+          <li><strong>Penetration Tester:</strong> Simulate attacker techniques, write reports, recommend fixes.</li>
+          <li><strong>Red Team Operator:</strong> Adversary simulation, advanced exploit chains, persistence techniques.</li>
+          <li><strong>Blue Team / Threat Hunter:</strong> Investigate threats, build detection, hunt for IOCs.</li>
+          <li><strong>Security Engineer:</strong> Build secure platforms, automation, hardening, monitoring.</li>
+          <li><strong>Malware Analyst / Reverse Engineer:</strong> Analyze malicious code and develop countermeasures.</li>
+          <li><strong>Cloud Security Engineer:</strong> Secure cloud platforms and identity flows.</li>
+          <li><strong>Security Architect:</strong> High-level designs, secure-by-design systems.</li>
+          <li><strong>Chief Information Security Officer (CISO):</strong> Leadership, policy, risk management.</li>
+        </ul>
+
+        <div class="callout">Tip: Many people start as juniors in IT / sysadmin roles and then transition to security. Practical experience beats certificates alone — build labs and document everything.</div>
+      </section>
+
+      <section class="card">
+        <h2>4. Step-by-step Learning Roadmap</h2>
+
+        <div class="grid">
+          <div class="box">
+            <h3>Beginner (0 - 3 months)</h3>
+            <ul>
+              <li>Basics: OS (Linux + Windows), command line, file system, permissions.</li>
+              <li>Networking fundamentals: TCP/IP, ports, protocols, DNS, HTTP(S).</li>
+              <li>Programming basics: Python for scripting and automation.</li>
+              <li>Intro tools: Nmap, Wireshark, basic firewall concepts.</li>
+              <li>Set up a lab: VirtualBox/VMware, a Kali VM, and a vulnerable VM (Metasploitable, OWASP Juice Shop).</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Intermediate (3 - 9 months)</h3>
+            <ul>
+              <li>Web application security: Learn OWASP Top 10, Burp Suite, manual testing.</li>
+              <li>System hardening & endpoint security basics.</li>
+              <li>Basic exploit chaining: SQLi, XSS, file upload attacks.</li>
+              <li>Start CTFs and TryHackMe/HTB beginner rooms.</li>
+              <li>Learn Git and maintain a GitHub portfolio of writeups and scripts.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Advanced (9 - 24 months)</h3>
+            <ul>
+              <li>Offensive tools & techniques: Metasploit, privilege escalation, post-exploitation.</li>
+              <li>Reverse engineering basics, IDA/Ghidra, dynamic analysis.</li>
+              <li>Cloud attack paths: IAM misconfigurations, S3/Buckets, serverless issues.</li>
+              <li>Develop detection rules, custom sensors, use Elastic Stack or Splunk for logs.</li>
+              <li>Start specialized certifications and professional pentesting.</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Specialist & Leadership</h3>
+            <ul>
+              <li>Exploit development, kernel bugs, hardware security for deep technical roles.</li>
+              <li>Security architecture, risk management, and leadership skills for senior roles.</li>
+              <li>Build reproducible toolchains, automation frameworks, and internal training programs.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>5. Recommended Certifications</h2>
+        <ul>
+          <li><strong>Beginner:</strong> CompTIA IT Fundamentals (optional), CompTIA Network+, CompTIA Security+.</li>
+          <li><strong>Practical / Offensive:</strong> OSCP (Offensive Security), eJPT, eCPPT.</li>
+          <li><strong>Enterprise / Management:</strong> CISSP, CISM (requires experience).</li>
+          <li><strong>Cloud:</strong> AWS Certified Security, Azure Security Engineer.</li>
+          <li><strong>Specialized:</strong> GIAC certs (GCIH, GNFA, GREM), SANS courses for forensics and incident response.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>6. Essential Tools & Platforms to Learn</h2>
+        <ul>
+          <li>Nmap, Netcat, Wireshark</li>
+          <li>Burp Suite, ZAP</li>
+          <li>Metasploit, Empire, Cobalt Strike (use legally & ethically)</li>
+          <li>Ghidra, IDA, Radare2</li>
+          <li>Elastic Stack / Splunk / SIEMs</li>
+          <li>Docker, Kubernetes, Terraform (DevSecOps)</li>
+          <li>Linux (Kali, Ubuntu), Windows internals, PowerShell</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>7. Project Ideas & Portfolio</h2>
+        <ul>
+          <li>Write detailed CTF walk-throughs and host them on GitHub (README writeups + code snippets).</li>
+          <li>Build simple security tools or scanners (Python) and publish them.</li>
+          <li>Create a home lab: ELK logging, a vulnerable VM fleet, and automate detection/playbooks.</li>
+          <li>Contribute to open-source security projects or write a blog explaining vulnerabilities.</li>
+          <li>Record short demo videos of tools you built (YouTube/shorts) and link them in your portfolio.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>8. Interview & Resume Tips</h2>
+        <ul>
+          <li>Keep a clean GitHub with 3–7 high-quality projects and writeups.</li>
+          <li>Prepare for hands-on tests: practice Boot2Root and HTB-like labs.</li>
+          <li>Be ready to explain trade-offs, risk, and remediation steps — not just finding vulnerabilities.</li>
+          <li>Learn to write clear technical reports and executive summaries.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>9. Learning Resources</h2>
+        <ul>
+          <li>Platforms: TryHackMe, Hack The Box, OverTheWire, CTFtime</li>
+          <li>Books: "The Web Application Hacker's Handbook", "Practical Malware Analysis", "Linux Basics for Hackers"</li>
+          <li>Blogs & YouTube: LiveOverflow, HackerSploit, The Cyber Mentor</li>
+          <li>Communities: Reddit (/r/netsec, /r/AskNetsec), Discord security servers, local meetups</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>10. Ethical & Legal Considerations</h2>
+        <p>Only test systems you own or have explicit written permission to test. Unauthorized access is illegal and unethical. Learn responsible disclosure processes for reporting vulnerabilities.</p>
+      </section>
+
+      <section class="card">
+        <h2>11. Suggested 6-Month Plan (Concise)</h2>
+        <ul>
+          <li><strong>Month 1–2:</strong> Linux + networking + Python basics + labs (TryHackMe beginners).</li>
+          <li><strong>Month 3–4:</strong> Web app security (OWASP Top 10), Burp Suite, small CTFs.</li>
+          <li><strong>Month 5:</strong> Start real pentest projects in a lab; learn post-exploitation and privilege escalation.</li>
+          <li><strong>Month 6:</strong> Document work, publish GitHub writeups, attempt an entry-level cert (eJPT / Security+).</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>12. Final Tips</h2>
+        <ul>
+          <li>Be curious and persistent. Learning security is iterative; one skill compounds with others.</li>
+          <li>Automate repetitive tasks — scripting is your force multiplier.</li>
+          <li>Network with peers and contribute to the community; mentorship accelerates growth.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Built for you - placeholders and personalize examples, project names, and links. Good luck, and hack ethically.</p><br>
+        <p>By Jeet Deepak Sarkar</p>
+      </footer>
+    </main>
+
+  </div>
+</body>
+</html>

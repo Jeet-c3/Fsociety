@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support</title>
+    <link rel="stylesheet" href="help_style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="index.html">🏠 Home</a>
+        <a href="About.html">👤 About</a>
+    </nav>
+
+    <div class="container">
+        <h1 class="title">Help & Support</h1>
+        <p class="subtitle">Need assistance? I’m here to help you, bro.</p>
+
+        <div class="card">
+            <h2>📞 Contact Options</h2>
+            <div class="options">
+                <a href="mailto:yourmail@gmail.com" class="btn">📧 Email Support</a>
+                <a href="https://github.com/YOUR_GITHUB" class="btn">💻 GitHub Issues</a>
+                <a href="#" class="btn">🐞 Report a Bug</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>❓ Frequently Asked Questions</h2>
+            <div class="faq">
+                <details>
+                    <summary>How can I report a problem?</summary>
+                    <p>You can email me or open an issue in GitHub. Add screenshots for faster help.</p>
+                </details>
+
+                <details>
+                    <summary>The site looks broken. What should I do?</summary>
+                    <p>Clear cache (Ctrl + F5). If still broken, report the issue.</p>
+                </details>
+
+                <details>
+                    <summary>Can I request new features?</summary>
+                    <p>Yes, bro. Tell me exactly what you want — UI, animations, tools, new pages, anything.</p>
+                </details>
+
+                <details>
+                    <summary>Who maintains this website?</summary>
+                    <p>Tony Stark — cybersecurity expert, AI builder, Linux user, and ethical hacker.</p>
+                </details>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 | Help & Support — Tony Stark
+        </footer>
+    </div>
+
+<script>
+function changeGradientAngle() {
+    const randomDeg = Math.floor(Math.random() * 360);
+    document.body.style.background = 
+        `linear-gradient(${randomDeg}deg, 
+            rgb(254, 0, 110),
+            rgba(238, 174, 202, 1),
+            rgba(148, 187, 233, 1),
+            rgba(1, 36, 74,1)
+        )`;
+    document.body.style.backgroundSize = "500% 500%";
+}
+setInterval(changeGradientAngle, 9000);
+changeGradientAngle();
+</script>
+
+</body>
+</html>
