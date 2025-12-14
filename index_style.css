@@ -20,19 +20,19 @@ body::before {
     z-index: -1;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    animation: slideShow 30s infinite ease-in-out;
+    background-image: url(images/bg1.jpeg);         /* For stable background */
+    /* background-repeat: no-repeat; */
+    /* animation: slideShow 30s infinite ease-in-out; */
     opacity: 1;
 }
 
-@keyframes slideShow {
+/* @keyframes slideShow {
     0%   { background-image: url("images/bg1.jpeg"); opacity: 1; }
     25%  { background-image: url("images/bg3.jpg"); opacity: 1; }
     50% {background-image: url("images/bg2.gif");opacity: 1;}
     75%  { background-image: url("images/bg4.jpg"); opacity: 1; }
     100% { background-image: url("images/bg1.jpeg"); opacity: 1; }
-}
-
+} */
 
 header {
     display: flex;
